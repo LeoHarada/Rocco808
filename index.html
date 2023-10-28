@@ -11,35 +11,30 @@
         <title>Rocco808</title>
     </head>
     <body>
-        <header>
-            <div class="swiper-container">
-                <div class="swiper">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <img src="img/img1.jpg" alt="pic1" />
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="img/img2.jpg" alt="pic2" />
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="img/img3.jpg" alt="pic3" />
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="img/img4.jpg" alt="pic4" />
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="img/img5.jpg" alt="pic5" />
-                        </div>
-                    </div>
-                    <div class="swiper-pagination"></div>
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
-                </div>
+        <div class="collapsible-menu">
+            <div class="flower">
+                <div class="one" id="flower"></div>
+                <div class="two" id="flower"></div>
+                <div class="three" id="flower"></div>
             </div>
-        </header>
+
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#music">Music</a></li>
+                    <li><a href="#videos">Videos</a></li>
+                    <li><a href="#photos">Photos</a></li>
+                    <li><a href="#events">Events</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
 
         <main>
-            <section id="aboutme">
+            <div class="header-pic-wrapper">
+                <img src="img/header-pic2.JPG" id="header-pic" />
+            </div>
+            <section id="home">
                 <div class="selfie-wrapper">
                     <div class="selfie">
                         <div class="selfie-container">
@@ -78,7 +73,40 @@
                     </div>
                 </div>
             </section>
+
+            <section id="music"></section>
+            <section id="videos"></section>
+            <section id="photos"></section>
+            <section id="events"></section>
+            <section id="contact"></section>
         </main>
+
+        <footer>
+            <div class="swiper-container">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="img/img1.jpg" alt="pic1" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/img2.jpg" alt="pic2" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/img3.jpg" alt="pic3" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/img4.jpg" alt="pic4" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/img5.jpg" alt="pic5" />
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+        </footer>
 
         <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
         <script>
@@ -100,5 +128,6 @@
                 },
             });
         </script>
+        <script src="main.js"></script>
     </body>
 </html>
