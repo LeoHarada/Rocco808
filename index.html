@@ -52,7 +52,85 @@
                             </div>
                         </div>
                     </div>
-                    <p id="musician">Musician</p>
+                    <svg
+                        class="svg--source"
+                        width="0"
+                        height="0"
+                        aria-hidden="true"
+                    >
+                        <symbol id="svg--instagram" viewBox="0 0 448 512">
+                            <path
+                                d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+                            />
+                        </symbol>
+
+                        <symbol id="svg--spotify" viewBox="0 0 496 512">
+                            <path
+                                d="M248 8C111.1 8 0 119.1 0 256s111.1 248 248 248 248-111.1 248-248S384.9 8 248 8zm100.7 364.9c-4.2 0-6.8-1.3-10.7-3.6-62.4-37.6-135-39.2-206.7-24.5-3.9 1-9 2.6-11.9 2.6-9.7 0-15.8-7.7-15.8-15.8 0-10.3 6.1-15.2 13.6-16.8 81.9-18.1 165.6-16.5 237 26.2 6.1 3.9 9.7 7.4 9.7 16.5s-7.1 15.4-15.2 15.4zm26.9-65.6c-5.2 0-8.7-2.3-12.3-4.2-62.5-37-155.7-51.9-238.6-29.4-4.8 1.3-7.4 2.6-11.9 2.6-10.7 0-19.4-8.7-19.4-19.4s5.2-17.8 15.5-20.7c27.8-7.8 56.2-13.6 97.8-13.6 64.9 0 127.6 16.1 177 45.5 8.1 4.8 11.3 11 11.3 19.7-.1 10.8-8.5 19.5-19.4 19.5zm31-76.2c-5.2 0-8.4-1.3-12.9-3.9-71.2-42.5-198.5-52.7-280.9-29.7-3.6 1-8.1 2.6-12.9 2.6-13.2 0-23.3-10.3-23.3-23.6 0-13.6 8.4-21.3 17.4-23.9 35.2-10.3 74.6-15.2 117.5-15.2 73 0 149.5 15.2 205.4 47.8 7.8 4.5 12.9 10.7 12.9 22.6 0 13.6-11 23.3-23.2 23.3z"
+                            />
+                        </symbol>
+
+                        <symbol id="svg--youtube" viewbox="-150 -150 800 800">
+                            <path
+                                d="M459,61.2C443.7,56.1,349.35,51,255,51c-94.35,0-188.7,5.1-204,10.2C10.2,73.95,0,163.2,0,255s10.2,181.05,51,193.8
+                                  C66.3,453.9,160.65,459,255,459c94.35,0,188.7-5.1,204-10.2c40.8-12.75,51-102,51-193.8S499.8,73.95,459,61.2z M204,369.75v-229.5
+                                  L357,255L204,369.75z"
+                            />
+                        </symbol>
+
+                        <symbol id="svg--apple" viewBox="0 0 384 512">
+                            <path
+                                d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"
+                            />
+                        </symbol>
+                    </svg>
+
+                    <div class="wrapper">
+                        <div class="connect">
+                            <a
+                                href="https://instagram.com/rocco808_"
+                                class="share instagram"
+                                target="_blank"
+                            >
+                                <svg role="presentation" class="svg--icon">
+                                    <use xlink:href="#svg--instagram" />
+                                </svg>
+                                <span class="clip">INSTAGRAM</span>
+                            </a>
+
+                            <a
+                                href="https://open.spotify.com/artist/22cn3eIorICqfwb4KthMSB?si=HKHqVlZ5ScC7M6rJIhxzkg"
+                                class="share spotify"
+                                target="_blank"
+                            >
+                                <svg role="presentation" class="svg--icon">
+                                    <use xlink:href="#svg--spotify" />
+                                </svg>
+                                <span class="clip">SPOTIFY</span>
+                            </a>
+
+                            <a
+                                href="https://youtu.be/iPIKfV4UB08"
+                                class="share youtube"
+                                target="_blank"
+                            >
+                                <svg role="presentation" class="svg--icon">
+                                    <use xlink:href="#svg--youtube" />
+                                </svg>
+                                <span class="clip">YOU-TUBE</span>
+                            </a>
+                            <a
+                                href="https://music.apple.com/us/artist/rocco808/1097713646"
+                                class="share apple"
+                                target="_blank"
+                            >
+                                <svg role="presentation" class="svg--icon">
+                                    <use xlink:href="#svg--apple" />
+                                </svg>
+                                <span class="clip">APPLE</span>
+                            </a>
+                        </div>
+                    </div>
                     <div class="about-me-text-container">
                         <img src="img/rocco808.png" id="about-me-img" />
                         <p id="about-me-text">
@@ -74,7 +152,18 @@
                 </div>
             </section>
 
-            <section id="music"></section>
+            <section id="music">
+                <iframe
+                    style="border-radius: 12px"
+                    src="https://open.spotify.com/embed/playlist/37i9dQZF1DZ06evO19syJ7?utm_source=generator"
+                    width="100%"
+                    height="352"
+                    frameborder="0"
+                    allowfullscreen=""
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                    loading="lazy"
+                ></iframe>
+            </section>
             <section id="videos"></section>
             <section id="photos"></section>
             <section id="events"></section>
