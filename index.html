@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <link
+            rel="stylesheet"
+            href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+        />
+        <title>Rocco808</title>
+    </head>
+    <body>
+        <header>
+            <div class="swiper-container">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="img/img1.jpg" alt="pic1" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/img2.jpg" alt="pic2" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/img3.jpg" alt="pic3" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/img4.jpg" alt="pic4" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/img5.jpg" alt="pic5" />
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <section id="aboutme">
+                <div class="selfie-wrapper">
+                    <div class="selfie">
+                        <div class="selfie-container">
+                            <div class="selfie-container-inner">
+                                <img
+                                    class="selfie-circle"
+                                    src="img/cartoon-background.png"
+                                    alt="rocco pic"
+                                />
+                                <img
+                                    class="selfie-img selfie-img1"
+                                    src="img/cartoon-rocco.png"
+                                    alt="rocco pic"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                    <p id="musician">Musician</p>
+                    <div class="about-me-text-container">
+                        <img src="img/rocco808.png" id="about-me-img" />
+                        <p id="about-me-text">
+                            Crossing the Pacific Ocean and infusing island
+                            culture into hiphop music, Rocco808 is the next
+                            stage that Island pop has been cultivating over the
+                            last few years. After making the transition from a
+                            small island to the big city of Los Angeles, he
+                            honed his craft and developed his own sound after
+                            years of experimental projects of writing,
+                            recording, and composing records. He goes above and
+                            beyond, exceeding expectations creating island pop
+                            melodies on trap drums and other various
+                            productions. His combination of such diverse sounds
+                            expresses his authenticity and his reinvention of
+                            pop reggae, Afro and rap music.
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+        <script>
+            const swiper = new Swiper(".swiper", {
+                autoplay: {
+                    delay: 3000,
+                    disableOnInteraction: false,
+                },
+                loop: true,
+
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+            });
+        </script>
+    </body>
+</html>

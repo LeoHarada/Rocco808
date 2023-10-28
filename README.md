@@ -1,2 +1,3 @@
 # Rocco808
-Static artist page for rapper Rocco808.
+
+Static page for rap artist Rocco808.
