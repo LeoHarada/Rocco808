@@ -4,13 +4,19 @@
     box-sizing: border-box;
 }
 
+html {
+    background-image: url(img/tropical_foliage.jpg);
+    background-attachment: fixed;
+    width: 100%;
+}
+
 body {
-    /* background: #f9f9f9 url(img/tropical_foliage.jpg); */
     font-family: "Raleway";
+    color: white;
 }
 
 h1 {
-    font-size: 1rem;
+    font-size: 1.2rem;
     display: flex;
     justify-content: center;
 }
@@ -43,7 +49,7 @@ a {
     width: 35px;
     height: 5px;
     margin: 6px;
-    background: #00bf63;
+    background: #f4ca44;
     backface-visibility: hidden;
     transition-duration: (0.2s);
 }
@@ -102,7 +108,7 @@ a {
 
 #header-pic {
     height: 100%;
-    left: -300px;
+    left: -500px;
     position: absolute;
 }
 
@@ -117,8 +123,8 @@ a {
 }
 
 #listen {
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 40px;
+    margin-right: 40px;
 }
 
 .swiper-container {
@@ -223,11 +229,18 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 #about-me-text {
     padding: 15px;
+    color: #fff;
     font-size: large;
+    text-shadow:
+        -1px 1px 0 #000,
+        1px 1px 0 #000,
+        1px -1px 0 #000,
+        -1px -1px 0 #000;
 }
 
 #music {
@@ -292,8 +305,17 @@ a {
     border: 2px solid #353c4a;
 }
 
-iframe {
-    margin-top: 20%;
+.videos-wrapper iframe {
+    width: 80%;
+    padding: 30px;
+}
+
+.youtube-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    width: 100%;
 }
 
 #more-videos {
@@ -334,7 +356,7 @@ iframe {
     display: block;
     margin: 0 auto;
     fill: currentColor;
-    color: #00bf63;
+    color: rgb(244 202 68);
 }
 
 .wrapper {
@@ -406,13 +428,60 @@ iframe {
 #contact {
     background: #f9f9f9 url(img/contact-background.JPG);
     color: white;
-    height: 100vh;
 }
 
 .contact-wrapper {
     padding-top: 20px;
+    padding-bottom: 20px;
     gap: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+@media only screen and (min-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    #home,
+    #music,
+    #videos,
+    #photos,
+    #events,
+    #listen,
+    #contact {
+        margin-top: 20%;
+    }
+
+    #header-pic {
+        left: 0px;
+        width: 100%;
+    }
+
+    .collapsible-menu-expanded ul {
+        margin-top: 10%;
+    }
+
+    .selfie {
+        margin-bottom: 0;
+    }
+
+    .about-me-text-container {
+        width: 50%;
+    }
+
+    #about-me-text {
+        font-size: x-large;
+    }
+
+    .photos-collection {
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .photos-collection img {
+        width: 25%;
+    }
 }
