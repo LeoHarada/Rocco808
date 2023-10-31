@@ -108,7 +108,7 @@ a {
 
 #header-pic {
     height: 100%;
-    left: -500px;
+    left: -260px;
     position: absolute;
 }
 
@@ -439,6 +439,25 @@ a {
     align-items: center;
 }
 
+@media only screen and (min-width: 375px) {
+    #header-pic {
+        left: -230px;
+    }
+}
+
+@media only screen and (min-width: 425px) {
+    #header-pic {
+        left: -206px;
+    }
+}
+
+@media only screen and (min-width: 626px) {
+    #header-pic {
+        left: 0px;
+        width: 100%;
+    }
+}
+
 @media only screen and (min-width: 768px) {
     h1 {
         font-size: 2rem;
@@ -455,7 +474,6 @@ a {
     }
 
     #header-pic {
-        left: 0px;
         width: 100%;
     }
 
@@ -483,5 +501,22 @@ a {
 
     .photos-collection img {
         width: 25%;
+    }
+}
+
+@media only screen and (min-width: 769px) {
+    #listen {
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+}
+
+@media only screen and (min-width: 1025px) {
+    #header-pic {
+        left: 20%;
+        width: 100vh;
+    }
+    .header-pic-wrapper {
+        background: #efdbdd;
     }
 }
