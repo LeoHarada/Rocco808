@@ -13,13 +13,14 @@ html {
 
 body {
     font-family: "Raleway";
-    color: white;
+    color: rgb(198 112 94);
 }
 
 h1 {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     display: flex;
     justify-content: center;
+    font-family: "Metal Mania";
 }
 
 a {
@@ -50,7 +51,7 @@ a {
     width: 35px;
     height: 5px;
     margin: 6px;
-    background: #f4ca44;
+    background: rgb(198 112 94);
     backface-visibility: hidden;
     transition-duration: (0.2s);
 }
@@ -81,6 +82,7 @@ a {
     font-size: 1.5em;
     color: #fff4f4;
     text-decoration: none;
+    font-family: "Metal Mania";
 }
 .collapsible-menu-expanded a:hover {
     transition: all 0.3s;
@@ -118,6 +120,13 @@ a {
     margin-top: 50%;
 }
 
+.music-wrapper,
+#videos h1,
+.photos-wrapper,
+#listen iframe {
+    padding-top: 5%;
+}
+
 #listen {
     margin-left: 40px;
     margin-right: 40px;
@@ -128,6 +137,8 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 .swiper {
@@ -230,13 +241,10 @@ a {
 
 #about-me-text {
     padding: 15px;
-    color: #fff;
+    color: #888683;
     font-size: large;
-    text-shadow:
-        -1px 1px 0 #000,
-        1px 1px 0 #000,
-        1px -1px 0 #000,
-        -1px -1px 0 #000;
+    font-weight: 600;
+    font-family: monospace;
 }
 
 #music {
@@ -254,6 +262,10 @@ a {
     gap: 20px;
 }
 
+.videos-wrapper {
+    margin-top: 10px;
+}
+
 .photos-wrapper {
     align-items: normal;
 }
@@ -262,8 +274,8 @@ a {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 #album-buy-now {
@@ -311,7 +323,7 @@ a {
     flex-direction: column;
     align-items: center;
     background-color: black;
-    width: 100%;
+    width: 80%;
 }
 
 #more-videos {
@@ -352,7 +364,7 @@ a {
     display: block;
     margin: 0 auto;
     fill: currentColor;
-    color: rgb(244 202 68);
+    color: rgb(198 112 94);
 }
 
 .wrapper {
@@ -433,6 +445,11 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-family: "Metal Mania";
+}
+
+p {
+    font-family: "Raleway";
 }
 
 .arrow {
@@ -479,11 +496,17 @@ a {
     .arrow {
         margin-top: 30%;
     }
+    h1 {
+        font-size: 2rem;
+    }
 }
 
 @media only screen and (min-width: 495px) {
     .header-pic-wrapper {
         margin-top: 15%;
+    }
+    h1 {
+        font-size: 2.4rem;
     }
 }
 
@@ -502,7 +525,7 @@ a {
 
 @media only screen and (min-width: 768px) {
     h1 {
-        font-size: 2rem;
+        font-size: 3.5rem;
     }
 
     .arrow {
@@ -537,6 +560,12 @@ a {
 
     #about-me-text {
         font-size: x-large;
+    }
+
+    .swiper-container {
+        width: unset;
+        margin-left: 12%;
+        margin-right: 12%;
     }
 
     .photos-collection {
