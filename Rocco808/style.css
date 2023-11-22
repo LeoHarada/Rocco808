@@ -37,10 +37,12 @@ a {
     z-index: 2;
     transition: all 0.5s;
 }
+
 .collapsible-menu ul {
     position: fixed;
     left: -9000px;
 }
+
 .flower {
     position: fixed;
     top: 10px;
@@ -441,6 +443,23 @@ a {
     background: #f9f9f9 url(img/contact-background.JPG);
     color: white;
 }
+.connect {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.contact-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 7%;
+    flex-wrap: wrap;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 5rem;
+    margin-top: 2rem;
+}
 
 .contact-wrapper {
     padding-top: 20px;
@@ -450,6 +469,18 @@ a {
     flex-direction: column;
     align-items: center;
     font-family: "Metal Mania";
+}
+
+.footer-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bottom-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 p {
